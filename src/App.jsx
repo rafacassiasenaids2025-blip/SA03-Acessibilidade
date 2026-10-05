@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+import StatusRede from "./components/StatusRede";
 import TaskForm from "./components/TaskForm";
 import TaskCard from "./components/TaskCard";
 
@@ -68,6 +69,10 @@ function App() {
       </div>
 
       <main id="conteudo" className="max-w-4xl mx-auto px-6 py-10">
+        <div className="mb-6 flex items-center justify-between gap-4 flex-wrap">
+          <StatusRede />
+        </div>
+
         <TaskForm onAdicionar={adicionarTarefa} />
 
         <div className="flex justify-between items-center mb-6">
